@@ -1,10 +1,9 @@
-import java.util.Date;
 
 public abstract class Veiculo {
 
     private String placa;
     private String modelo;
-    private Date ano;
+    private int ano;
 
     public Veiculo() {
     }
@@ -25,11 +24,23 @@ public abstract class Veiculo {
         this.modelo = modelo;
     }
 
-    public Date getAno() {
+    public int getAno() {
         return ano;
     }
 
-    public void setAno(Date ano) {
+    public void setAno(int ano) {
         this.ano = ano;
+
+    }
+
+    public void exibirDados(){
+
+
+        System.out.println("Ano: " + ano);
+        System.out.println("Placa: " + placa);
+        System.out.println("Modelo: " + modelo);
+
+
+
     }
 }
