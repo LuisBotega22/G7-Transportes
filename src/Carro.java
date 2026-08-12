@@ -16,7 +16,7 @@ public class Carro extends Veiculo implements Entrega {
 
     @Override
     public void realizarEntrega(String destino) {
-        System.out.println("O carro está realizando uma entrega para: " + destino);
+        System.out.println("O carro está em rota para: " + destino);
     }
 
     @Override
